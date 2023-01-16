@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body,
+input,
+select,
+textarea {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #E5E5E5;
+}
+
+
+/* body::before posiciona o retangulo azul atrás dos itens da header, define tamanho e cor */
+body::before {
+  content: '';
+
+  width: 100%;
+  height: 436px;
+
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  background: #535971;
+
+}
+
+/* posicionamento da header */
+header {
+  /* margin: 140px 345px; */
+
+
+  width: 736px;
+  margin: 0 auto;
+
+}
+
+/* estilização do título (h1) da header*/
+header h1 {
+  font-family: 'Staatliches', cursive;
+  font-weight: 400;
+  line-height: 60px;
+
+  font-size: 48px;
+  color: #FFFFFF;
+
+  margin-top: 140px;
+  margin-bottom: 18px;
+}
+
+/* estilização do texto p da header*/
+header p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.page {
+  width: 736px;
+  margin: 0 auto;
+}
+
+/* posicionamento do formulário */
+.page {
+  position: absolute;
+
+  /* width: 750px;
+  height: 1084px; */
+
+  top: 322px;
+  left: 345px;
+  right: 345px;
+
+}
+
+/* formatação geral das especificações do formulário */
+form {
+  background: #FFFFFF;
+  border-radius: 20px 20px 0px 0px;
+
+  /* position: absolute; */
+
+  padding: 64px;
+  width: 750px;
+  height: 1084px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+}
+
+/* comando para retirar a borda do formulário */
+fieldset {
+  border: none;
+
+}
+
+/* configurações das especificações dos campos dentro do formulário */
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+}
+
+/* especificações de estilo dos títulos (legend) das partes do formulário */
+fieldset legend {
+  font-family: 'Staatliches', cursive;
+  color: #535971;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+
+  width: 100%;
+  border-bottom: 1px solid #E6E6F0;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+
+}
+
+.fieldset-wrapper p {
+  font-family: 'Staatliches', cursive;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+
+  color: #535971;
+
+  margin-top: 8px;
+
+
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* especificações de estilo dos títulos de cada campo */
+.input-wrapper label {
+  color: #4e4958;
+
+  font-weight: 400;
+  font-size: 14px;
+
+  line-height: 24px;
+
+  margin-bottom: 8px;
+}
+
+/* especificações de estilo dos spans de título de cada campo */
+.input-wrapper span {
+  color: #c1bccc;
+
+  font-weight: 400;
+  font-size: 12px;
+
+  line-height: 20px;
+}
+
+/* mudança de cor ao passar o mouse no span para melhor visualização */
+.input-wrapper label span:hover {
+  color: #6c6a71;
+}
+
+/* especificações de estilo das entradas de text/seleção (tamanho, cor, fundo, espaçamento) */
+.input-wrapper input,
+.input-wrapper textarea,
+.input-wrapper select {
+  background: #FAFAFC;
+
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+
+  height: 56px;
+  padding: 0 24px;
+
+
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #6c6a71;
+
+}
+
+/* divisão dos campos nome e sobrenome na mesma linha */
+.col-name {
+  display: flex;
+  gap: 22px;
+}
+
+/* tamanho dos campos nome e sobrenome */
+.col-name>div:nth-child(1) {
+  width: 300px;
+}
+
+.col-name>div:nth-child(2) {
+  width: 300px;
+}
+
+
+/* tamanho dos campos de horários da primeira mentoria */
+.col-mentorship0 {
+  display: flex;
+  gap: 32px;
+}
+
+.col-mentorship1 {
+  display: flex;
+  gap: 10px;
+}
+
+.col-mentorship0>div:nth-child(1) {
+  width: 300px;
+}
+
+.col-mentorship1>div:nth-child(1) {
+  width: 140px;
+}
+
+.col-mentorship1>div:nth-child(2) {
+  width: 140px;
+}
+
+footer {
+  width: 750px;
+  height: 160px;
+  left: 346px;
+  top: 1404px;
+
+  background: #535971;
+  border-radius: 0px 0px 20px 20px;
+
+  padding: 52px 71px;
+
+  margin-bottom: 366px;
+}
+
+footer .button {
+  justify-content: center;
+  align-items: center;
+
+  padding: 15px 40px;
+  gap: 10px;
+
+  width: 608px;
+  height: 55.65px;
+  border: none;
+
+  background: #FF5374;
+  border-radius: 20px;
+
+  color: #FFFFFF;
+  font-size: 20px;
+  font-family: 'Staatliches', cursive;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+footer .button:hover {
+  background: #d43051;
+}
+
+input:invalid {
+  border: 1px solid #d43051;
+}
